@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -12,6 +12,8 @@
 		B32FE2DC23D8D61D00CB1363 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B32FE2DB23D8D61D00CB1363 /* Assets.xcassets */; };
 		B32FE2DF23D8D61D00CB1363 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B32FE2DE23D8D61D00CB1363 /* Preview Assets.xcassets */; };
 		B32FE2E223D8D61D00CB1363 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B32FE2E023D8D61D00CB1363 /* Main.storyboard */; };
+		B32FE2EC23D8D63D00CB1363 /* SwiftDraw in Frameworks */ = {isa = PBXBuildFile; productRef = B32FE2EB23D8D63D00CB1363 /* SwiftDraw */; };
+		B32FE2EE23D8D6E500CB1363 /* tshirt.svg in Resources */ = {isa = PBXBuildFile; fileRef = B32FE2ED23D8D6E500CB1363 /* tshirt.svg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +25,7 @@
 		B32FE2E123D8D61D00CB1363 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B32FE2E323D8D61D00CB1363 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B32FE2E423D8D61D00CB1363 /* Xconate.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Xconate.entitlements; sourceTree = "<group>"; };
+		B32FE2ED23D8D6E500CB1363 /* tshirt.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = tshirt.svg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -30,6 +33,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B32FE2EC23D8D63D00CB1363 /* SwiftDraw in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -55,6 +59,7 @@
 		B32FE2D623D8D61900CB1363 /* Xconate */ = {
 			isa = PBXGroup;
 			children = (
+				B32FE2ED23D8D6E500CB1363 /* tshirt.svg */,
 				B32FE2D723D8D61900CB1363 /* AppDelegate.swift */,
 				B32FE2D923D8D61900CB1363 /* ContentView.swift */,
 				B32FE2DB23D8D61D00CB1363 /* Assets.xcassets */,
@@ -90,6 +95,9 @@
 			dependencies = (
 			);
 			name = Xconate;
+			packageProductDependencies = (
+				B32FE2EB23D8D63D00CB1363 /* SwiftDraw */,
+			);
 			productName = Xconate;
 			productReference = B32FE2D423D8D61900CB1363 /* Xconate.app */;
 			productType = "com.apple.product-type.application";
@@ -118,6 +126,9 @@
 				Base,
 			);
 			mainGroup = B32FE2CB23D8D61900CB1363;
+			packageReferences = (
+				B32FE2EA23D8D63D00CB1363 /* XCRemoteSwiftPackageReference "SwiftDraw" */,
+			);
 			productRefGroup = B32FE2D523D8D61900CB1363 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -134,6 +145,7 @@
 			files = (
 				B32FE2E223D8D61D00CB1363 /* Main.storyboard in Resources */,
 				B32FE2DF23D8D61D00CB1363 /* Preview Assets.xcassets in Resources */,
+				B32FE2EE23D8D6E500CB1363 /* tshirt.svg in Resources */,
 				B32FE2DC23D8D61D00CB1363 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -345,6 +357,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		B32FE2EA23D8D63D00CB1363 /* XCRemoteSwiftPackageReference "SwiftDraw" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/swhitty/SwiftDraw.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.7.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		B32FE2EB23D8D63D00CB1363 /* SwiftDraw */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B32FE2EA23D8D63D00CB1363 /* XCRemoteSwiftPackageReference "SwiftDraw" */;
+			productName = SwiftDraw;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = B32FE2CC23D8D61900CB1363 /* Project object */;
 }
