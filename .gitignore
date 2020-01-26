@@ -90,4 +90,5 @@ fastlane/test_output
 iOSInjectionProject/
 
 *.App
+*.pkg
 .DS_Store

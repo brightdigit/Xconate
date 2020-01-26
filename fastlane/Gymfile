@@ -1,4 +1,0 @@
-export_options({
-  method: "package",
-  format: "pkg"
-})

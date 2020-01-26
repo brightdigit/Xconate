@@ -18,7 +18,9 @@ default_platform(:mac)
 platform :mac do
   desc "Push a new release build to the App Store"
   lane :release do
-    build_app(scheme: "Xconate")
-    upload_to_app_store(skip_metadata: true, skip_screenshots: true, platform: "osx", run_precheck_before_submit: false, force: true)
+    #build_app(scheme: "Xconate")
+    #productbuild --component Xconate.app /Applications Xconate.pkg
+    #productsign --sign "3rd Party Mac Developer Installer" --keychain ~/Library/Keychains/login.keychain Xconate.pkg Xconate-signed.pkg
+    upload_to_app_store(pkg: "./Xconate-signed.pkg",skip_metadata: true, skip_screenshots: true, platform: "osx", run_precheck_before_submit: false, force: true)
   end
 end
